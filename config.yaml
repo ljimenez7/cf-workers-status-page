@@ -17,8 +17,16 @@ settings:
 monitors:
   - id: chadporter.net
     name: chadporter.net
+    description: 'Main Website'
     url: 'https://chadporter.net/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
 
   - id: plex
     name: plex
+    description: 'Plex Media Server'
     url: 'https://plex.chadp.me/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
